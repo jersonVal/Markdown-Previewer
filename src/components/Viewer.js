@@ -1,6 +1,6 @@
 import React from "react";
 
-const Viewer = ({setText})=>{
+const Viewer = ({setText,text})=>{
 
     const btnOpenDown = (e)=>{
         const div = document.querySelector('.viewer-container')
@@ -26,7 +26,7 @@ const Viewer = ({setText})=>{
                 <span className="title">Editor</span>
                 <i className="fas fa-expand-arrows-alt" onClick={btnOpenDown}></i>
             </div>
-            <textarea id="editor" onChange={handleText} placeholder="write some markdown text"></textarea>
+            <textarea id="editor" onChange={handleText}>{text}</textarea>
         </div>
     )
 

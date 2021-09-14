@@ -1,4 +1,5 @@
 import React from "react";
+import marked from "marked";
 
 const PreViewer = ({text})=>{
 
@@ -23,7 +24,7 @@ const PreViewer = ({text})=>{
                 <i className="fas fa-expand-arrows-alt" onClick={btnOpenDown}></i>
             </div>
             <div id="preview">
-                {text}
+                
             </div>
         </div>
     )
